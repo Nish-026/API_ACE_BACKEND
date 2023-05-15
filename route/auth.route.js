@@ -83,7 +83,6 @@ authRoute.get(
         const token = jwt.sign({
             userID: user._id
         }, 'token', { expiresIn: '24hr' });
-        console.log(token);
         res.redirect(`https://apiwizard.netlify.app/dashboard.html?username=${user.name}&userID=${user._id}&token=${token}`);
     }
 );

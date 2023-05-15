@@ -40,7 +40,7 @@ userRoute.post("/signup", async (req, res) => {
                 
                 Best regards,
                 API ACE`;
-        // sendMail(sub, body, email);
+        sendMail(sub, body, email);
         res.send("user registered");
       }
     });
