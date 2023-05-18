@@ -98,7 +98,7 @@ passportGithub.use(
         {
             clientID: process.env.GITHUB_CLIENT_ID,
             clientSecret: process.env.GITHUB_CLIENT_SECRET,
-            callbackURL: "https://elegant-moth-zipper.cyclic.app/auth/github/callback",
+            callbackURL: "https://elegant-moth-zipper.cyclic.app/auth/github/",
             scope: "user:email",
         },
         async function (request, accessToken, refreshToken, profile, done) {
