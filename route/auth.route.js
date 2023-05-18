@@ -43,7 +43,7 @@ passport.use(
         {
             clientID: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            callbackURL: "http://localhost:4500/auth/google/callback", // change the callback link
+            callbackURL: "https://elegant-moth-zipper.cyclic.app/auth/google/callback", // change the callback link
             passReqToCallback: true
         },
         async function (request, accessToken, refreshToken, profile, cb) {
